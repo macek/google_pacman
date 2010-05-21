@@ -1,0 +1,464 @@
+<!doctype html><html onmousemove="google&&google.fade&&google.fade(event)">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Google</title>
+  <script>
+    window.google = {
+      kEI: "zNr2S6z3C4f0eNui1bYK",
+      kEXPI: "17259,18168,24661,24737,24745",
+      kCSI: {
+        e: "17259,18168,24661,24737,24745",
+        ei: "zNr2S6z3C4f0eNui1bYK",
+        expi: "17259,18168,24661,24737,24745"
+      },
+      ml: function () {},
+      kHL: "en",
+      time: function () {
+        return (new Date).getTime()
+      },
+      log: function (b, d, c) {
+        var a = new Image,
+          e = google,
+          g = e.lc,
+          f = e.li;
+        a.onerror = (a.onload = (a.onabort = function () {
+          delete g[f]
+        }));
+        g[f] = a;
+        c = c || "/gen_204?atyp=i&ct=" + b + "&cad=" + d + "&zx=" + google.time();
+        a.src = c;
+        e.li = f + 1
+      },
+      lc: [],
+      li: 0,
+      Toolbelt: {}
+    };
+    window.google.sn = "webhp";
+    window.google.timers = {
+      load: {
+        t: {
+          start: (new Date).getTime()
+        }
+      }
+    };
+    try {
+      window.google.pt = window.chrome && window.chrome.csi && Math.floor(window.chrome.csi().pageT);
+    } catch (u) {}
+    window.google.jsrt_kill = 1;
+    var _gjwl = location;
+
+    function _gjuc() {
+      var b = _gjwl.href.indexOf("#");
+      if (b >= 0) {
+        var a = _gjwl.href.substring(b + 1);
+        if (/(^|&)q=/.test(a) && a.indexOf("#") == -1 && !/(^|&)cad=h($|&)/.test(a)) {
+          _gjwl.replace("/search?" + a.replace(/(^|&)fp=[^&]*/g, "") + "&cad=h");
+          return 1
+        }
+      }
+      return 0
+    }
+    function _gjp() {
+      !(window._gjwl.hash && window._gjuc()) && setTimeout(_gjp, 500)
+    };
+    window._gjp && _gjp()
+  </script>
+  <style>
+    body{margin:0}
+    #gog{padding:3px 8px 0}
+    td{line-height:.8em;}
+    .gac_m td{line-height:17px;}
+    form{margin-bottom:20px;}
+    body,td,a,p,.h{font-family:arial,sans-serif}
+    .h{color:#36c;font-size:20px}
+    .q{color:#00c}
+    .ts td{padding:0}
+    .ts{border-collapse:collapse}
+    em{font-weight:bold;font-style:normal}
+    .lst{width:496px}
+    input{font-family:inherit}
+    .lsb:active,.gac_sb:active{background:-webkit-gradient(linear,left top,left bottom,from(#ccc),to(#ddd))}
+    #fctr,#ghead,#pmocntr,#sbl,#tba,#tbe,.fade{opacity:0;}
+    #fctr,#ghead,#pmocntr,#sbl,#tba,#tbe,.fade{background:#fff;}
+    a.gb1,a.gb2,a.gb3,a.gb4{color:#11c !important}
+    #gog{background:#fff;}
+    #gbar,#guser{font-size:13px;padding-top:1px !important}
+    #gbar{float:left;height:22px}
+    #guser{padding-bottom:7px !important;text-align:right}
+    .gbh,.gbd{border-top:1px solid #c9d7f1;font-size:1px}
+    .gbh{height:0;position:absolute;top:24px;width:100%}
+    #gbs,.gbm{background:#fff;left:0;position:absolute;text-align:left;visibility:hidden;z-index:1000}
+    .gbm{border:1px solid;border-color:#c9d7f1 #36c #36c #a2bae7;z-index:1001}
+    .gb1{margin-right:.5em}
+    .gb1,.gb3{zoom:1}
+    .gb2{display:block;padding:.2em .5em;}
+    .gb2,.gb3{text-decoration:none;border-bottom:none}
+    a.gb1,a.gb2,a.gb3,a.gb4{color:#00c !important}
+    a.gb2:hover{background:#36c;color:#fff !important}
+    body{background:#fff;color:black}
+    input{-moz-box-sizing:content-box}
+    a{color:#11c;text-decoration:none}
+    a:hover,a:active{text-decoration:underline}
+    .fl a{color:#4272db}
+    a:visited{color:#551a8b}
+    a.gb1,a.gb4{text-decoration:underline}
+    a.gb3:hover{text-decoration:none}
+    #ghead a.gb2:hover{color:#fff!important}
+    .ds{display:-moz-inline-box}
+    .ds{border-bottom:solid 1px #e7e7e7;border-right:solid 1px #e7e7e7;display:inline-block;margin:3px 0 4px;margin-left:4px;margin-right:3px:height:32px}
+    .sblc{padding-top:5px}
+    .sblc a{display:block;margin:2px 0;margin-left:13px;font-size:11px;}
+    .lsbb{background:#eee;border:solid 1px;border-color:#ccc #999 #999 #ccc;height:30px;display:block}
+    .lsb{background:url(/images/srpr/nav_logo13.png) bottom;font:15px arial,sans-serif;border:none;cursor:pointer;height:30px;margin:0;outline:0;vertical-align:top}
+    .lsb:active{background:#ccc}
+    .lst:focus{outline:none}
+    .ftl,#fll a{margin:0 12px}
+    #addlang a{padding:0 3px}
+    .gac_v div{display:none}
+    .gac_v .gac_v2,.gac_bt{display:block!important}
+  </style>
+  <noscript>
+    <style>
+      #fctr,#ghead,#pmocntr,#sbl,#tba,#tbe,.fade{opacity:1;}
+    </style>
+  </noscript>
+  <script>
+    google.y = {};
+    google.x = function (e, g) {
+      google.y[e.id] = [e, g];
+      return false
+    };
+    if (!window.google) window.google = {};
+    window.google.crm = {};
+    window.google.cri = 0;
+    window.clk = function (e, f, g, k, l, b, m) {
+      if (document.images) {
+        var a = encodeURIComponent || escape,
+          c = new Image,
+          h = window.google.cri++;
+        window.google.crm[h] = c;
+        c.onerror = (c.onload = (c.onabort = function () {
+          delete window.google.crm[h]
+        }));
+        if (b && b.substring(0, 6) != "&sig2=") b = "&sig2=" + b;
+        c.src = ["/url?sa=T", "", f ? "&oi=" + a(f) : "", g ? "&cad=" + a(g) : "", "&ct=", a(k || "res"), "&cd=", a(l), "&ved=", a(m), e ? "&url=" + a(e.replace(/#.*/, "")).replace(/\+/g, "%2B") : "", "&ei=", "zNr2S6z3C4f0eNui1bYK", b].join("")
+      }
+      return true
+    };
+    window.gbar = {
+      qs: function () {},
+      tg: function (e) {
+        var o = {
+          id: 'gbar'
+        };
+        for (i in e) o[i] = e[i];
+        google.x(o, function () {
+          gbar.tg(o)
+        })
+      }
+    };
+  </script>
+</head>
+<body bgcolor='#ffffff' text='#000000' link='#0000cc' vlink='#551a8b' alink='#ff0000' onload="document.f.q.focus();if(document.images)new Image().src='/images/srpr/nav_logo13.png'">
+<textarea id='csi' style='display:none'></textarea>
+<iframe name='wgjf' style='display:none'>
+</iframe>
+<div id='ghead'>
+	<div id='gog'>
+		<div id='gbar'>
+			<nobr><b class='gb1'>Web</b><a href="http://www.google.com/imghp?hl=en&tab=wi" onclick='gbar.qs(this)' class='gb1'>Images</a><a href="http://video.google.com/?hl=en&tab=wv" onclick='gbar.qs(this)' class='gb1'>Videos</a><a href="http://maps.google.com/maps?hl=en&tab=wl" onclick='gbar.qs(this)' class='gb1'>Maps</a><a href="http://news.google.com/nwshp?hl=en&tab=wn" onclick='gbar.qs(this)' class='gb1'>News</a><a href="http://www.google.com/prdhp?hl=en&tab=wf" onclick='gbar.qs(this)' class='gb1'>Shopping</a><a href="http://mail.google.com/mail/?hl=en&tab=wm" class='gb1'>Gmail</a><a href="http://www.google.com/intl/en/options/" onclick="this.blur();gbar.tg(event);return !1" aria-haspopup='true' class='gb3'><u>more</u><small>&#9660;</small></a>
+			<div class='gbm' id='gbi'>
+				<a href="http://books.google.com/bkshp?hl=en&tab=wp" onclick='gbar.qs(this)' class='gb2'>Books</a><a href="http://www.google.com/finance?hl=en&tab=we" onclick='gbar.qs(this)' class='gb2'>Finance</a><a href="http://translate.google.com/?hl=en&tab=wT" onclick='gbar.qs(this)' class='gb2'>Translate</a><a href="http://scholar.google.com/schhp?hl=en&tab=ws" onclick='gbar.qs(this)' class='gb2'>Scholar</a><a href="http://blogsearch.google.com/?hl=en&tab=wb" onclick='gbar.qs(this)' class='gb2'>Blogs</a>
+				<div class='gb2'>
+					<div class='gbd'>
+					</div>
+				</div>
+				<a href="http://www.youtube.com/?hl=en&tab=w1" onclick='gbar.qs(this)' class='gb2'>YouTube</a><a href="http://www.google.com/calendar/render?hl=en&tab=wc" class='gb2'>Calendar</a><a href="http://picasaweb.google.com/home?hl=en&tab=wq" onclick='gbar.qs(this)' class='gb2'>Photos</a><a href="http://docs.google.com/?hl=en&tab=wo" class='gb2'>Documents</a><a href="http://www.google.com/reader/?hl=en&tab=wy" class='gb2'>Reader</a><a href="http://sites.google.com/?hl=en&tab=w3" class='gb2'>Sites</a><a href="http://groups.google.com/grphp?hl=en&tab=wg" onclick='gbar.qs(this)' class='gb2'>Groups</a>
+				<div class='gb2'>
+					<div class='gbd'>
+					</div>
+				</div>
+				<a href="http://www.google.com/intl/en/options/" class='gb2'>even more &raquo;</a>
+			</div>
+			</nobr>
+		</div>
+		<div id='guser' width='100%'>
+			<nobr><span id='gbn' class='gbi'></span><span id='gbf' class='gbf'></span><span id='gbe'><a href="/url?sa=p&pref=ig&pval=3&q=http://www.google.com/ig%3Fhl%3Den%26source%3Diglk&usg=AFQjCNFA18XPfgb7dKnXfKz7x7g1GDH1tg" class='gb4'>iGoogle</a> | </span><a href="/preferences?hl=en" class='gb4'>Search settings</a> | <a href="https://www.google.com/accounts/Login?hl=en&continue=http://www.google.com/" class='gb4'>Sign in</a></nobr>
+		</div>
+		<div class='gbh' style='left:0'>
+		</div>
+		<div class='gbh' style='right:0'>
+		</div>
+	</div>
+</div>
+<center><br clear='all' id='lgpd'>
+<div id='lga'>
+	<a href="/search?q=PAC-MAN+30th+Anniversary&ct=pacman10-hp&oi=ddle" id="dlink"></a>
+	<div id='logo' style="width:554px;height:186px;background:black url(logos/pacman10-hp.png) 0 0 no-repeat;position:relative;margin-bottom:9px" title="PAC-MAN's 30th Birthday! Doodle with PAC-MAN™ & ©1980 NAMCO BANDAI Games Inc.">
+		<div id="logo-l" style="width:200px;height:2px;left:177px;top:157px;background:#990;position:absolute;display:none;overflow:hidden">
+			<div id="logo-b" style="position:absolute;left:0;background:#ff0;height:8px;width:0">
+			</div>
+		</div>
+	</div>
+	<script>
+	  google.pml = function () {
+      function d(a) {
+        if (!google.pml_installed) {
+          google.pml_installed = true;
+          if (!a) {
+            document.getElementById("logo").style.background = "black";
+            window.setTimeout(function () {
+              var b = document.getElementById("logo-l");
+              if (b) b.style.display = "block"
+            }, 400)
+          }
+          a = document.createElement("script");
+          a.type = "text/javascript";
+          a.src = "logos/js/pacman10-hp.2.js";
+          google.dom.append(a)
+        }
+      }
+      function e() {
+        if (document.f && document.f.btnI) document.f.btnI.onclick = function () {
+          typeof google.pacman != "undefined" ? google.pacman.insertCoin() : d(false);
+          return false
+        }
+      }
+      if (!google.pml_loaded) {
+        google.pml_loaded = true;
+        window.setTimeout(function () {
+          document.f && document.f.q && document.f.q.value == "" && d(true)
+        }, 1E4);
+        e();
+        google.rein && google.rein.push(e);
+        google.dstr && google.dstr.push(function () {
+          google.pacman && google.pacman.destroy();
+          if (google.pml_installed) {
+            for (var a = (document.getElementById("xjsc") || document.body).getElementsByTagName("script"), b = 0, c; c = a[b++];) c.src.indexOf("/logos/js") != -1 && google.dom.remove(c);
+            google.pml_installed = false
+          }
+        });
+        google.pacManQuery = function () {
+          google.nav(document.getElementById("dlink").href)
+        }
+      }
+    };
+	</script>
+</div>
+<form action="/search" name='f'>
+	<table cellpadding='0' cellspacing='0'>
+	<tr valign='top'>
+		<td width='25%'>
+			&nbsp;
+		</td>
+		<td align='center' nowrap>
+			<input name='hl' type='hidden' value='en'><input name='source' type='hidden' value='hp'>
+			<div class='ds' style="height:32px;margin:4px 0">
+				<input autocomplete="off" onblur="google&&google.fade&&google.fade()" maxlength='2048' name='q' class='lst' title="Google Search" value="" size='57' style="border:1px solid #ccc;border-bottom-color:#999;border-right-color:#999;font:18px arial,sans-serif bold;height:25px;margin:0;padding:5px 8px 0 6px;vertical-align:top">
+			</div>
+			<br style="line-height:0">
+			<span class='ds'><span class='lsbb'><input name='btnG' type='submit' value="Google Search" class='lsb'></span></span><span class='ds'><span class='lsbb'><input name='btnI' type='submit' value="Insert Coin" class='lsb'></span></span>
+		</td>
+		<td nowrap width='25%' align='left' class='sblc' id='sbl'>
+			<a href="/advanced_search?hl=en">Advanced Search</a><a href="/language_tools?hl=en">Language Tools</a>
+		</td>
+	</tr>
+	</table>
+</form>
+<div style="font-size:83%;min-height:3.5em">
+	<br>
+	<div class='fade'>
+		<font size='-1'>Over 33,000 children drew doodles for our homepage.<br>
+		<a href="/aclk?sa=L&ai=C50w1xtr2S4acGJWI8waNxuGgDN2qo78B3dLUyhLB2ZzZExABIMFUUJjUvLH5_____wFgyQaqBJ8BT9BoRuBgLfUnhni6VWG_0K2xo0pPzKEUs8hmcJOs7mj2QJ-8NbxLgDMpxXma6RRohp8lKdk14JOXVIWNHBVp_PzSl3VHfhgBgdbJTHGSAlgaFqD51pvEXWsIrxxdQUS7T0Uu3FdUG4yI8botK86063iJORTgF71Q0YQjW0R-BDJkv4A65cVter3Lxhqtx8p0R2CKIc5m13IrTleQVZOg&num=1&sig=AGiWqtxwvxrCN9AK1dny2XxD4IwQhD2OvQ&adurl=http://www.google.com/doodle4google/vote.html">Vote for the one</a> that will appear here!</font><br>
+		<br>
+	</div>
+</div>
+<div id='res'>
+</div>
+<span id='footer'><center id='fctr'>
+<div style="font-size:10pt">
+	<div id='fll' style="margin:19px auto 19px auto;text-align:center">
+		<a href="/intl/en/ads/">Advertising&nbsp;Programs</a><a href="/services/">Business Solutions</a><a href="/intl/en/about.html">About Google</a>
+	</div>
+</div>
+<p style="color:#767676;font-size:8pt">
+	&copy; 2010 - <a href="/intl/en/privacy.html">Privacy</a>
+</p>
+</center></span>
+<div id='xjsd'>
+</div>
+<div id='xjsi'>
+	<script>
+    if (google.y) google.y.first = [];
+    if (google.y) google.y.first = [];
+    google.dstr = [];
+    google.rein = [];
+    window.setTimeout(function () {
+      var a = document.createElement("script");
+      // Google src originally links to /extern_js/f/SOME_LONG_HASH/ANOTHER_HASH.js
+      // It is regenerated upon each page refresh
+      a.src = "/extern_js/google.js";
+      (document.getElementById("xjsd") || document.body).appendChild(a);
+      if (google.timers && google.timers.load.t) google.timers.load.t.xjsls = (new Date).getTime();
+    }, 0);;
+    google.neegg = 1;
+    google.y.first.push(function () {
+      google.ac.i(document.f, document.f.q, '', '', '', {
+        o: 1,
+        sw: 1
+      });
+      (function () {
+        var h, i, j = 1,
+          k = google.time(),
+          l = [];
+
+        function m(a, f) {
+          var b = [];
+          for (var c = 0, e; e = a[c++];) {
+            var d = document.getElementById(e);
+            d && b.push(d)
+          }
+          for (var c = 0, g; g = f[c++];) b = b.concat(n(g[0], g[1]));
+          for (var c = 0; b[c]; c++) b[c] = [b[c], "opacity", 0, 1, 0, ""];
+          return b
+        }
+        function n(a, f) {
+          var b = [],
+            c = new RegExp("(^|\\s)" + f + "($|\\s)");
+          for (var e = 0, d, g = document.getElementsByTagName(a); d =
+          g[e++];) c.test(d.className) && b.push(d);
+          return b
+        }
+        google.fade = function (a) {
+          if (google.fx && j) {
+            a = a || window.event;
+            var f = 1,
+              b = google.time() - k;
+            if (a && a.type == "mousemove") {
+              var c = a.clientX,
+                e = a.clientY;
+              f = (h || i) && (h != c || i != e) && b > 600;
+              h = c;
+              i = e
+            }
+            if (f) {
+              j = 0;
+              google.fx.animate(600, m(["fctr", "ghead", "pmocntr", "sbl", "tba", "tbe"], [
+                ["span", "fade"],
+                ["div", "fade"],
+                ["div", "gbh"]
+              ]));
+              for (var d = 0; d < l.length; ++d) if (typeof l[d] == "function") l[d]()
+            }
+          }
+        };
+        google.addFadeNotifier = function (a) {
+          l.push(a);
+          if (!j) a()
+        };
+      })();;
+      google.History && google.History.initialize('/')
+    });
+    if (google.j && google.j.en && google.j.xi) {
+      window.setTimeout(google.j.xi, 0);
+      google.fade = null;
+    }
+    google.pml && google.pml();
+  </script>
+</div>
+<script>
+  (function () {
+    var b, d, e, f;
+
+    function g(a, c) {
+      if (a.removeEventListener) {
+        a.removeEventListener("load", c, false);
+        a.removeEventListener("error", c, false)
+      } else {
+        a.detachEvent("onload", c);
+        a.detachEvent("onerror", c)
+      }
+    }
+    function h(a) {
+      f = (new Date).getTime();
+      ++d;
+      a = a || window.event;
+      var c = a.target || a.srcElement;
+      g(c, h)
+    }
+    var i = document.getElementsByTagName("img");
+    b = i.length;
+    d = 0;
+    for (var j = 0, k; j < b; ++j) {
+      k = i[j];
+      if (k.complete || typeof k.src != "string" || !k.src)++d;
+      else if (k.addEventListener) {
+        k.addEventListener("load", h, false);
+        k.addEventListener("error", h, false)
+      } else {
+        k.attachEvent("onload", h);
+        k.attachEvent("onerror", h)
+      }
+    }
+    e = b - d;
+
+    function l() {
+      google.timers.load.t.ol = (new Date).getTime();
+      google.timers.load.t.iml = f;
+      google.kCSI.imc = d;
+      google.kCSI.imn = b;
+      google.kCSI.imp = e;
+      google.report && google.report(google.timers.load, google.kCSI)
+    }
+    if (window.addEventListener) window.addEventListener("load", l, false);
+    else if (window.attachEvent) window.attachEvent("onload", l);
+    google.timers.load.t.prt = (f = (new Date).getTime());
+  })();
+  (function () {
+    var b, d, e, f;
+
+    function g(a, c) {
+      if (a.removeEventListener) {
+        a.removeEventListener("load", c, false);
+        a.removeEventListener("error", c, false)
+      } else {
+        a.detachEvent("onload", c);
+        a.detachEvent("onerror", c)
+      }
+    }
+    function h(a) {
+      f = (new Date).getTime();
+      ++d;
+      a = a || window.event;
+      var c = a.target || a.srcElement;
+      g(c, h)
+    }
+    var i = document.getElementsByTagName("img");
+    b = i.length;
+    d = 0;
+    for (var j = 0, k; j < b; ++j) {
+      k = i[j];
+      if (k.complete || typeof k.src != "string" || !k.src)++d;
+      else if (k.addEventListener) {
+        k.addEventListener("load", h, false);
+        k.addEventListener("error", h, false)
+      } else {
+        k.attachEvent("onload", h);
+        k.attachEvent("onerror", h)
+      }
+    }
+    e = b - d;
+
+    function l() {
+      google.timers.load.t.ol = (new Date).getTime();
+      google.timers.load.t.iml = f;
+      google.kCSI.imc = d;
+      google.kCSI.imn = b;
+      google.kCSI.imp = e;
+      google.report && google.report(google.timers.load, google.kCSI)
+    }
+    if (window.addEventListener) window.addEventListener("load", l, false);
+    else if (window.attachEvent) window.attachEvent("onload", l);
+    google.timers.load.t.prt = (f = (new Date).getTime());
+  })();
+</script>

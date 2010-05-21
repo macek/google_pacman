@@ -1,0 +1,43 @@
+
+To get this working:
+--------------------
+
+There is a javascript error on index.html:218
+
+    Uncaught TypeError: Cannot call method 'append' of undefined
+    
+I'm guessing there is some trouble with the Google framework loading. Can someone help figure this out?
+
+
+
+
+
+Here's where the pacman script is loaded
+
+index.html:215-218
+--------------------
+    
+    a = document.createElement("script");
+    a.type = "text/javascript";
+    a.src = "logos/js/pacman10-hp.2.js";
+    google.dom.append(a)
+
+
+
+
+
+Looks like this is where Google's javascript framework is loaded
+
+index.html:296-303
+-------------------
+    
+    window.setTimeout(function () {
+      var a = document.createElement("script");
+      // Google src originally links to /extern_js/f/SOME_LONG_HASH/ANOTHER_HASH.js
+      // It is regenerated upon each page refresh
+      a.src = "/extern_js/google.js";
+      (document.getElementById("xjsd") || document.body).appendChild(a);
+      if (google.timers && google.timers.load.t) google.timers.load.t.xjsls = (new Date).getTime();
+    }, 0);;
+    
+    
