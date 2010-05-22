@@ -22,3 +22,6 @@ SteD for providing a nicely formatted version of pacman10-hp.2.js
 
 Skizo for noticing that relative paths don't work as expected when
 executed locally.
+
+browner87 cleaning up the homepage, adding a nice starting graphic,
+and fixing the `Insert Coin` button
