@@ -40,9 +40,17 @@ A snippet from Adobe.com
 
 To have flash trust your local SWF, you must add your `google_pacman`
 folder to the allow list using your Flash Control Panel.
-
-Adobe Flash Control Panel:
-http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager03.html
+  
+  1. Adobe Flash Control Panel:
+     http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager03.html
+  
+  2. Click `Edit Locations`
+  
+  3. Click `Add Location`
+  
+  4. Browse to your `google_pacman` directory
+  
+  5. Click `Add`
 
 Read more about this issue here:
 http://www.adobe.com/devnet/flash/articles/fplayer8_security_09.html
