@@ -1,0 +1,79 @@
+Google Pacman
+-------------
+
+This is a localized copy of Google's playable Pacman game logo hosted for
+Pacman's 30th Anniversary.
+
+With the help of StackOverflow users, we were able to get a playable
+version working.
+
+
+
+
+
+Confusion Surrounding Audio Bug
+-------------------------------
+When this repository was originally created, Google was using:
+  
+  logos/js/pacman10-hp.2.js
+  logos/pacman10-hp-sprite.png
+
+They have since updated to:
+
+  logos/js/pacman10-hp.3.js
+  logos/pacman10-hp-sprite-2.png
+
+As you can see, the new sprite features a mute button. Those playing on
+a webserver should have a fully functioning game now. However, music
+and sound do not work when playing locally.
+
+
+
+@winwakr found this fix for the time being:
+
+A snippet from Adobe.com
+
+    For example, a trusted local HTML file may permit an untrusted local
+    SWF to script it by setting allowScriptAccess="always". However, an 
+    untrusted local HTML file may never permit an untrusted local SWF to
+    script it, regardless of the value of allowScriptAccess.
+
+To have flash trust your local SWF, you must add your `google_pacman`
+folder to the allow list using your Flash Control Panel.
+  
+  1. Adobe Flash Control Panel:
+     http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager03.html
+  
+  2. Click `Edit Locations`
+  
+  3. Click `Add Location`
+  
+  4. Browse to your `google_pacman` directory
+  
+  5. Click `Add`
+
+Read more about this issue here:
+http://www.adobe.com/devnet/flash/articles/fplayer8_security_09.html
+
+
+
+
+
+Wishlist
+--------
+1. Get sound working (when playing locally)
+2. Strip out unnecessary Google code
+
+
+
+
+
+Thanks to:
+----------
+SteD for providing a nicely formatted version of pacman10-hp.2.js
+
+Skizo for noticing that relative paths don't work as expected when
+executed locally.
+
+Mason Barry for cleaning up the homepage, adding a nice starting graphic,
+and fixing the `Insert Coin` button
