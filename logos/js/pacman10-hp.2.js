@@ -1842,13 +1842,13 @@ function () {
     c = g.getCorrectedSpritePos(parseInt(c, 10));
     d = g.getCorrectedSpritePos(parseInt(d, 10));
     if (g.useCss) {
-      b.style.backgroundImage = "url(/logos/pacman10-hp-sprite.png)";
+      b.style.backgroundImage = "url(logos/pacman10-hp-sprite.png)";
       b.style.backgroundPosition = -c + "px " + -d + "px";
       b.style.backgroundRepeat = "no-repeat"
     } else {
       b.style.overflow = "hidden";
       c = "display: block; position: relative; left: " + -c + "px; top: " + -d + "px";
-      b.innerHTML = '<img style="' + c + '" src="/logos/pacman10-hp-sprite.png">'
+      b.innerHTML = '<img style="' + c + '" src="logos/pacman10-hp-sprite.png">'
     }
   };
   g.changeElementBkPos = function (b, c, d, f) {
@@ -2188,7 +2188,7 @@ function () {
     j.style.height = f + "px";
     j.style.zIndex = 119;
     if (h) {
-      j.style.background = "url(/logos/pacman10-hp-sprite.png) -" + g.killScreenTileX + "px -" + g.killScreenTileY + "px no-repeat";
+      j.style.background = "url(logos/pacman10-hp-sprite.png) -" + g.killScreenTileX + "px -" + g.killScreenTileY + "px no-repeat";
       g.killScreenTileY += 8
     } else j.style.background = "black";
     g.playfieldEl.appendChild(j)
@@ -3001,7 +3001,7 @@ function () {
   };
   g.prepareGraphics = function () {
     g.graphicsReady = e;
-    g.preloadImage("/logos/pacman10-hp-sprite.png")
+    g.preloadImage("logos/pacman10-hp-sprite.png")
   };
   g.trimString = function (b) {
     return b.replace(/^[\s\xa0]+|[\s\xa0]+$/g, "")

@@ -1,4 +1,4 @@
-<!doctype html><html onmousemove="google&&google.fade&&google.fade(event)">
+﻿<!doctype html><html onmousemove="google&&google.fade&&google.fade(event)">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <title>Google</title>
@@ -234,7 +234,7 @@
         google.dstr && google.dstr.push(function () {
           google.pacman && google.pacman.destroy();
           if (google.pml_installed) {
-            for (var a = (document.getElementById("xjsc") || document.body).getElementsByTagName("script"), b = 0, c; c = a[b++];) c.src.indexOf("/logos/js") != -1 && google.dom.remove(c);
+            for (var a = (document.getElementById("xjsc") || document.body).getElementsByTagName("script"), b = 0, c; c = a[b++];) c.src.indexOf("logos/js") != -1 && google.dom.remove(c);
             google.pml_installed = false
           }
         });
@@ -297,7 +297,7 @@
       var a = document.createElement("script");
       // Google src originally links to /extern_js/f/SOME_LONG_HASH/ANOTHER_HASH.js
       // It is regenerated upon each page refresh
-      a.src = "/extern_js/google.js";
+      a.src = "extern_js/google.js";
       (document.getElementById("xjsd") || document.body).appendChild(a);
       if (google.timers && google.timers.load.t) google.timers.load.t.xjsls = (new Date).getTime();
     }, 0);;
