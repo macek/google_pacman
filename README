@@ -1,11 +1,15 @@
 Google Pacman
 -------------
 
-This is a localized copy of Google's playable Pacman game logo hosted for
+This is a copy of Google's playable Pacman game logo hosted for
 Pacman's 30th Anniversary.
 
 With the help of StackOverflow users, we were able to get a playable
 version working.
+
+To play a live version: http://macek.github.com/google_pacman/
+
+Or download the source and run it offline.
 
 
 
