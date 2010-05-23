@@ -1,4 +1,5 @@
-<!doctype html><html onmousemove="google&&google.fade&&google.fade(event)">
+<!doctype html>
+<html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Google</title>
@@ -41,27 +42,6 @@
         }
       }
     };
-    try {
-      window.google.pt = window.chrome && window.chrome.csi && Math.floor(window.chrome.csi().pageT);
-    } catch (u) {}
-    window.google.jsrt_kill = 1;
-    var _gjwl = location;
-
-    function _gjuc() {
-      var b = _gjwl.href.indexOf("#");
-      if (b >= 0) {
-        var a = _gjwl.href.substring(b + 1);
-        if (/(^|&)q=/.test(a) && a.indexOf("#") == -1 && !/(^|&)cad=h($|&)/.test(a)) {
-          _gjwl.replace("/search?" + a.replace(/(^|&)fp=[^&]*/g, "") + "&cad=h");
-          return 1
-        }
-      }
-      return 0
-    }
-    function _gjp() {
-      !(window._gjwl.hash && window._gjuc()) && setTimeout(_gjp, 500)
-    };
-    window._gjp && _gjp()
   </script>
   <style>
     body{margin:0}
@@ -161,10 +141,7 @@
     };
   </script>
 </head>
-<body text='#000000' link='#0000cc' vlink='#551a8b' alink='#ff0000' onLoad="document.f.q.focus();if(document.images)new Image().src='/images/srpr/nav_logo13.png'">
-<textarea id='csi' style='display:none'></textarea>
-<iframe name='wgjf' style='display:none'>
-</iframe>
+<body text='#000000' link='#0000cc' vlink='#551a8b' alink='#ff0000'>
 <center><br clear='all' id='lgpd'>
 <div id='lga'>
 	<a href="#gameover" id="dlink"></a>
@@ -194,15 +171,21 @@
       }
       function e() {
         if (document.f && document.f.btnI) document.f.btnI.onclick = function () {
-          typeof google.pacman != "undefined" ? google.pacman.insertCoin() : d(false);
+          if (typeof google.pacman != "undefined") google.pacman.insertCoin()
+          else {
+              google.pacManSound = true;
+              d(false);
+          }
           return false
         }
       }
       if (!google.pml_loaded) {
         google.pml_loaded = true;
+        /*
         window.setTimeout(function () {
-          document.f && document.f.q && document.f.q.value == "" && d(true)
+          d(true)
         }, 1E4);
+        */
         e();
         google.rein && google.rein.push(e);
         google.dstr && google.dstr.push(function () {
@@ -241,7 +224,6 @@
 <div id='xjsi'>
 	<script>
     if (google.y) google.y.first = [];
-    if (google.y) google.y.first = [];
     google.dstr = [];
     google.rein = [];
     window.setTimeout(function () {
@@ -253,163 +235,6 @@
       if (google.timers && google.timers.load.t) google.timers.load.t.xjsls = (new Date).getTime();
     }, 0);;
     google.neegg = 1;
-    google.y.first.push(function () {
-      google.ac.i(document.f, document.f.q, '', '', '', {
-        o: 1,
-        sw: 1
-      });
-      (function () {
-        var h, i, j = 1,
-          k = google.time(),
-          l = [];
-
-        function m(a, f) {
-          var b = [];
-          for (var c = 0, e; e = a[c++];) {
-            var d = document.getElementById(e);
-            d && b.push(d)
-          }
-          for (var c = 0, g; g = f[c++];) b = b.concat(n(g[0], g[1]));
-          for (var c = 0; b[c]; c++) b[c] = [b[c], "opacity", 0, 1, 0, ""];
-          return b
-        }
-        function n(a, f) {
-          var b = [],
-            c = new RegExp("(^|\\s)" + f + "($|\\s)");
-          for (var e = 0, d, g = document.getElementsByTagName(a); d =
-          g[e++];) c.test(d.className) && b.push(d);
-          return b
-        }
-        google.fade = function (a) {
-          if (google.fx && j) {
-            a = a || window.event;
-            var f = 1,
-              b = google.time() - k;
-            if (a && a.type == "mousemove") {
-              var c = a.clientX,
-                e = a.clientY;
-              f = (h || i) && (h != c || i != e) && b > 600;
-              h = c;
-              i = e
-            }
-            if (f) {
-              j = 0;
-              google.fx.animate(600, m(["fctr", "ghead", "pmocntr", "sbl", "tba", "tbe"], [
-                ["span", "fade"],
-                ["div", "fade"],
-                ["div", "gbh"]
-              ]));
-              for (var d = 0; d < l.length; ++d) if (typeof l[d] == "function") l[d]()
-            }
-          }
-        };
-        google.addFadeNotifier = function (a) {
-          l.push(a);
-          if (!j) a()
-        };
-      })();;
-      google.History && google.History.initialize('/')
-    });
-    if (google.j && google.j.en && google.j.xi) {
-      window.setTimeout(google.j.xi, 0);
-      google.fade = null;
-    }
     google.pml && google.pml();
   </script>
 </div>
-<script>
-  (function () {
-    var b, d, e, f;
-
-    function g(a, c) {
-      if (a.removeEventListener) {
-        a.removeEventListener("load", c, false);
-        a.removeEventListener("error", c, false)
-      } else {
-        a.detachEvent("onload", c);
-        a.detachEvent("onerror", c)
-      }
-    }
-    function h(a) {
-      f = (new Date).getTime();
-      ++d;
-      a = a || window.event;
-      var c = a.target || a.srcElement;
-      g(c, h)
-    }
-    var i = document.getElementsByTagName("img");
-    b = i.length;
-    d = 0;
-    for (var j = 0, k; j < b; ++j) {
-      k = i[j];
-      if (k.complete || typeof k.src != "string" || !k.src)++d;
-      else if (k.addEventListener) {
-        k.addEventListener("load", h, false);
-        k.addEventListener("error", h, false)
-      } else {
-        k.attachEvent("onload", h);
-        k.attachEvent("onerror", h)
-      }
-    }
-    e = b - d;
-
-    function l() {
-      google.timers.load.t.ol = (new Date).getTime();
-      google.timers.load.t.iml = f;
-      google.kCSI.imc = d;
-      google.kCSI.imn = b;
-      google.kCSI.imp = e;
-      google.report && google.report(google.timers.load, google.kCSI)
-    }
-    if (window.addEventListener) window.addEventListener("load", l, false);
-    else if (window.attachEvent) window.attachEvent("onload", l);
-    google.timers.load.t.prt = (f = (new Date).getTime());
-  })();
-  (function () {
-    var b, d, e, f;
-
-    function g(a, c) {
-      if (a.removeEventListener) {
-        a.removeEventListener("load", c, false);
-        a.removeEventListener("error", c, false)
-      } else {
-        a.detachEvent("onload", c);
-        a.detachEvent("onerror", c)
-      }
-    }
-    function h(a) {
-      f = (new Date).getTime();
-      ++d;
-      a = a || window.event;
-      var c = a.target || a.srcElement;
-      g(c, h)
-    }
-    var i = document.getElementsByTagName("img");
-    b = i.length;
-    d = 0;
-    for (var j = 0, k; j < b; ++j) {
-      k = i[j];
-      if (k.complete || typeof k.src != "string" || !k.src)++d;
-      else if (k.addEventListener) {
-        k.addEventListener("load", h, false);
-        k.addEventListener("error", h, false)
-      } else {
-        k.attachEvent("onload", h);
-        k.attachEvent("onerror", h)
-      }
-    }
-    e = b - d;
-
-    function l() {
-      google.timers.load.t.ol = (new Date).getTime();
-      google.timers.load.t.iml = f;
-      google.kCSI.imc = d;
-      google.kCSI.imn = b;
-      google.kCSI.imp = e;
-      google.report && google.report(google.timers.load, google.kCSI)
-    }
-    if (window.addEventListener) window.addEventListener("load", l, false);
-    else if (window.attachEvent) window.attachEvent("onload", l);
-    google.timers.load.t.prt = (f = (new Date).getTime());
-  })();
-</script>
