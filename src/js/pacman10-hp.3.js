@@ -2216,7 +2216,10 @@ function () {
   g.newLevel = function (b) {
     g.level++;
     g.levels = g.level >= z.length ? z[z.length - 1] : z[g.level];
-    g.levels.frightTime = Math.round(g.levels.frightTime * D);
+    // start issue 14: Ghosts stay blue permanently on restart
+    if ((g.levels.frightTime > 0) && (g.levels.frightTime <= 6))
+      g.levels.frightTime = Math.round(g.levels.frightTime * D);
+    // end issue 14
     g.levels.frightTotalTime = g.levels.frightTime + g.timing[1] * (g.levels.frightBlinkCount * 2 - 1);
     for (var c in g.actors) g.actors[c].dotCount = 0;
     g.alternatePenLeavingScheme = e;
