@@ -375,7 +375,7 @@ function () {
     y = 0.8 * 0.4,
     z = [{},
     {
-      ghostSpeed: 0.75,
+      ghostSpeed: 0.01,
       ghostTunnelSpeed: 0.4,
       playerSpeed: 0.8,
       dotEatingSpeed: 0.71,
@@ -395,7 +395,7 @@ function () {
       penLeavingLimits: [0, 0, 30, 60]
     },
     {
-      ghostSpeed: 0.85,
+      ghostSpeed: 0.01,
       ghostTunnelSpeed: 0.45,
       playerSpeed: 0.9,
       dotEatingSpeed: 0.79,
@@ -416,7 +416,7 @@ function () {
       cutsceneId: 1
     },
     {
-      ghostSpeed: 0.85,
+      ghostSpeed: 0.01,
       ghostTunnelSpeed: 0.45,
       playerSpeed: 0.9,
       dotEatingSpeed: 0.79,
@@ -436,7 +436,7 @@ function () {
       penLeavingLimits: [0, 0, 0, 0]
     },
     {
-      ghostSpeed: 0.85,
+      ghostSpeed: 0.01,
       ghostTunnelSpeed: 0.45,
       playerSpeed: 0.9,
       dotEatingSpeed: 0.79,
@@ -456,7 +456,7 @@ function () {
       penLeavingLimits: [0, 0, 0, 0]
     },
     {
-      ghostSpeed: 0.95,
+      ghostSpeed: 0.01,
       ghostTunnelSpeed: 0.5,
       playerSpeed: 1,
       dotEatingSpeed: 0.87,
@@ -477,7 +477,7 @@ function () {
       cutsceneId: 2
     },
     {
-      ghostSpeed: 0.95,
+      ghostSpeed: 0.01,
       ghostTunnelSpeed: 0.5,
       playerSpeed: 1,
       dotEatingSpeed: 0.87,
@@ -497,7 +497,7 @@ function () {
       penLeavingLimits: [0, 0, 0, 0]
     },
     {
-      ghostSpeed: 0.95,
+      ghostSpeed: 0.01,
       ghostTunnelSpeed: 0.5,
       playerSpeed: 1,
       dotEatingSpeed: 0.87,
@@ -508,7 +508,7 @@ function () {
       elroySpeedPart1: 1,
       elroyDotsLeftPart2: 25,
       elroySpeedPart2: 1.05,
-      frightTime: 2,
+      frightTime: 200,
       frightBlinkCount: 5,
       fruit: 5,
       fruitScore: 1E3,
@@ -517,7 +517,7 @@ function () {
       penLeavingLimits: [0, 0, 0, 0]
     },
     {
-      ghostSpeed: 0.95,
+      ghostSpeed: 0.01,
       ghostTunnelSpeed: 0.5,
       playerSpeed: 1,
       dotEatingSpeed: 0.87,
