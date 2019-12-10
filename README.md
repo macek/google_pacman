@@ -10,7 +10,7 @@ version working 100%.
 To play a live version: http://macek.github.com/google_pacman
 
 Or download the source and run it offline.
-
+[![Run on Repl.it](https://repl.it/badge/github/macek/google_pacman)](https://repl.it/github/macek/google_pacman)
 
 
 Sound in Offline Mode
