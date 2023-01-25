@@ -2019,18 +2019,22 @@ function () {
     var c = e;
     switch (b) {
     case 37:
+    case 72:
       g.actors[0].requestedDir = 4;
       c = a;
       break;
     case 38:
+    case 75:
       g.actors[0].requestedDir = 1;
       c = a;
       break;
     case 39:
+    case 76:
       g.actors[0].requestedDir = 8;
       c = a;
       break;
     case 40:
+    case 74:
       g.actors[0].requestedDir = 2;
       c = a;
       break;
