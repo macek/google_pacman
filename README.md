@@ -58,3 +58,5 @@ KevinCathcart for recommending we setup a live version on the `gh-pages` branch
 KevinCathcart and Barry Silverman for removing a good amount of unnecessary HTML/JavaScript
 
 KevinCathcart and Barry Silverman for getting the famous intro song working
+
+Alex Watson and Dmitriy P. from https://trustanalytica.com/online/best-urgent-essay-writing-services
